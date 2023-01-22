@@ -63,9 +63,25 @@
         // .index__login--logo
 
         &--logo {
-            width: 100%; height: auto;
-            max-width: 382px;
-            object-fit: contain;
+
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            
+            &-body {
+                position: relative;
+                width: 100%; aspect-ratio: 1/0.7;
+                max-width: 382px;
+            }
+            
+            & img {
+                position: absolute;
+                left: 50%; top: 0;
+                transform: translate(-50%,0);
+                object-fit: contain;
+                max-width: 382px;
+                width: 100%; height: 100%;
+            }
         }
 
         // .index__login--submit
