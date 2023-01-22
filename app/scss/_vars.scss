@@ -1,0 +1,32 @@
+
+
+:root {
+    --title-font: 'Montserrat', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
+
+    --white: #FFF;
+    --black: #000;
+    --dark: #282828;
+    --dark-2: #070707;
+    --dark-3: #3a3a3a;
+    --light: #F2F2F2;
+    --gray-light: #C4C4C4;
+
+    --container-padding: 15px;
+}
+
+@font-face {
+    @include font-include('Montserrat', 400, swap, normal, 'Montserrat-Regular');
+}
+
+@font-face {
+    @include font-include('Montserrat', 500, swap, normal, 'Montserrat-Medium');
+}
+
+@font-face {
+    @include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
+}
+
+@font-face {
+    @include font-include('Montserrat', 700, swap, normal, 'Montserrat-Bold');
+}

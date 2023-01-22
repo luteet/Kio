@@ -1,0 +1,81 @@
+
+.main-title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    line-height: 105%;
+    color: #070707;
+
+    margin: 0;
+
+    font-size: 3rem;
+
+    @include _768 {
+        font-size: 6rem;
+    }
+
+    @include _992 {
+        font-size: 8rem;
+    }
+
+}
+
+.title {
+    
+    font-family: var(--title-font);
+    font-weight: 600;
+
+    font-size: 1.125rem;
+
+    @include _768 {
+        font-size: 1.5rem;
+    }
+
+    @include _992 {
+        font-size: 1.875rem;
+    }
+}
+
+.min-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 133%;
+
+    @include _768 {
+        font-size: 1.5rem;
+    }
+    
+    @include _992 {
+        font-size: 1.875rem;
+    }
+}
+
+.section-title {
+
+    font-family: var(--title-font);
+    font-weight: 700;
+
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.text {
+    font-size: 1rem;
+    @media (min-width: 500px) {
+        font-size: 1.175rem;
+    }
+    line-height: 133%;
+
+    @include _768 {
+        font-size: 1.5rem;
+    }
+    
+    @include _992 {
+        font-size: 1.875rem;
+    }
+
+    & p {
+        padding: 10px 0;
+    }
+}

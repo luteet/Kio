@@ -1,0 +1,38 @@
+@@include("html/_header.html")
+
+<main class="main">
+	<section class="platforms container center _large">
+		<div class="platforms__body block-body">
+			<h1 class="platforms__title main-title">
+				DARKNET
+			</h1>
+			<div class="platforms__text text">
+				Актуальные ссылки на даркнет маркетплейсы.
+			</div>
+			<ul class="platforms__list">
+				@@loop("html/_platforms-card.html", [
+					{
+						"logo": '1',
+					},
+					{
+						"logo": '2',
+					},
+					{
+						"logo": '3',
+					},
+					{
+						"logo": '4',
+					},
+					{
+						"logo": '5',
+					},
+					{
+						"logo": '5',
+					}
+				])
+			</ul>
+		</div>
+	</section>
+</main>
+
+@@include("html/_footer.html")

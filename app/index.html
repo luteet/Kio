@@ -1,0 +1,108 @@
+@@include("html/_header.html")
+
+<main class="main">
+	<section class="index container">
+		<div class="index__bg">
+			<div class="index__bg--decor">
+				<img src="img/decor-1.svg" width="672" height="1000" loading="lazy" alt="">
+			</div>
+			<div class="index__bg--decor">
+				<img src="img/decor-2.svg" width="672" height="1000" loading="lazy" alt="">
+			</div>
+		</div>
+		<div class="index__login">
+			<div class="index__login--body block-body">
+				<picture>
+					<source srcset="img/logo.webp" type="image/webp">
+					<img src="img/logo.png" alt="" width="382" height="270" loading="lazy" class="index__login--logo">
+				</picture>
+				<a href="login.html" class="index__login--submit btn">
+					Войти
+				</a>
+			</div>
+		</div>
+		<div class="index__advantages">
+			<ul class="index__advantages--list">
+				<li class="index__advantages--card index__advantages-card">
+					<div class="index__advantages-card--body block-body">
+						<div class="index__advantages-card--logo">
+							<img src="img/advantage-1.svg" width="107" height="107" loading="lazy" alt="">
+						</div>
+						<h3 class="index__advantages-card--title">
+							Пополнение баланса
+						</h3>
+						<div class="index__advantages-card--text">
+							Администрация сайта оставляет за собой право по своему личному усмотрению изменять и/или
+							дополнять настоящие Правила в любой момент времени без предварительного и/или последующего
+							уведомления пользователей.
+						</div>
+					</div>
+				</li>
+				<li class="index__advantages--card index__advantages-card">
+					<div class="index__advantages-card--body block-body">
+						<div class="index__advantages-card--logo">
+							<img src="img/advantage-2.svg" width="107" height="107" loading="lazy" alt="">
+						</div>
+						<h3 class="index__advantages-card--title">
+							Безопасный вход
+						</h3>
+						<div class="index__advantages-card--text">
+							Администрация сайта оставляет за собой право по своему личному усмотрению изменять и/или
+							дополнять настоящие Правила в любой момент времени без предварительного и/или последующего
+							уведомления пользователей.
+						</div>
+					</div>
+				</li>
+				<li class="index__advantages--card index__advantages-card">
+					<div class="index__advantages-card--body block-body">
+						<div class="index__advantages-card--logo">
+							<img src="img/advantage-2.svg" width="107" height="107" loading="lazy" alt="">
+						</div>
+						<h3 class="index__advantages-card--title">
+							Покупка товара
+						</h3>
+						<div class="index__advantages-card--text">
+							Администрация сайта оставляет за собой право по своему личному усмотрению изменять и/или
+							дополнять настоящие Правила в любой момент времени без предварительного и/или последующего
+							уведомления пользователей.
+						</div>
+					</div>
+				</li>
+				<li class="index__advantages--card index__advantages-card">
+					<div class="index__advantages-card--body block-body">
+						<div class="index__advantages-card--logo">
+							<img src="img/advantage-3.svg" width="107" height="107" loading="lazy" alt="">
+						</div>
+						<h3 class="index__advantages-card--title">
+							Поддержка модераторов
+						</h3>
+						<div class="index__advantages-card--text">
+							Администрация сайта оставляет за собой право по своему личному усмотрению изменять и/или
+							дополнять настоящие Правила в любой момент времени без предварительного и/или последующего
+							уведомления пользователей.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<form action="#" class="index__current-link">
+			<div class="index__current-link--body block-body">
+				<div class="index__current-link--row">
+					<h3 class="index__current-link--title title">
+						Актуальная ссылка TOR:
+					</h3>
+					<div class="index__current-link--copy">
+						<input type="text" name="link" value="https://kraken.com" readonly
+							class="index__current-link--copy-input" id="copy-input">
+						<button class="index__current-link--copy-btn copy-btn" type="button" data-clipboard-target="#copy-input" title="Скопировать ссылку"></button>
+					</div>
+				</div>
+				<a href="login.html" class="index__current-link--submit btn">
+					Войти на Kraken
+				</a>
+			</div>
+		</form>
+	</section>
+</main>
+
+@@include("html/_footer.html")

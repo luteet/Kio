@@ -1,0 +1,60 @@
+.login {
+
+	// .login__body
+
+	&__body {
+		text-align: center;
+
+		padding: 96px 30px;
+		width: 100%;
+
+		
+	}
+
+	// .login__title
+
+	&__title {
+	}
+
+	// .login__text
+
+	&__text {
+	}
+
+	// .login__form
+
+	&__form {
+		display: inline-flex;
+		align-items: center;
+		flex-direction: column;
+
+		padding-top: 39px;
+
+		max-width: 488px; width: 100%;
+	}
+
+	// .login__label
+
+	&__label {
+		width: 100%;
+	}
+
+	// .login__input
+
+	&__input {
+		width: 100%;
+	}
+
+	// .login__submit
+
+	&__submit {
+		margin-top: 39px;
+		width: 100%;
+	}
+
+	// .login__link
+
+	&__link {
+		margin-top: 39px;
+	}
+}

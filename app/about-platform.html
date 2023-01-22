@@ -1,0 +1,56 @@
+@@include("html/_header.html")
+
+<main class="main">
+	<section class="about-platform container center _large">
+		<div class="about-platform__body block-body">
+			<a href="platforms.html" class="about-platform__back">
+				<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M33.1459 4.36019C32.3405 3.5466 31.0345 3.5466 30.2291 4.36019L11.8541 21.0269C11.0486 21.8405 11.0486 23.1595 11.8541 23.9731L30.2291 40.6398C31.0345 41.4534 32.3405 41.4534 33.1459 40.6398C33.9514 39.8262 33.9514 38.5071 33.1459 37.6935L16.2293 22.5L33.1459 7.30647C33.9514 6.49288 33.9514 5.17379 33.1459 4.36019Z"
+						fill="black" />
+				</svg>
+				Назад
+			</a>
+			<div class="about-platform__logo">
+				<picture>
+					<source srcset="img/links/logo-1.webp" type="image/webp">
+					<img src="img/links/logo-1.png" alt="" width="425" height="169" loading="lazy">
+				</picture>
+			</div>
+			<form action="#" class="about-platform__current-link">
+				<div class="about-platform__current-link--row">
+					<h2 class="about-platform__current-link--title">
+						Актуальная ссылка:
+					</h2>
+					<div class="about-platform__current-link--copy">
+						<label class="about-platform__current-link--label">
+							<input type="text" name="copy-link-1" value="https://kraken.com" id="copy-input-1" readonly
+								class="about-platform__current-link--input">
+						</label>
+						<button class="about-platform__current-link--btn copy-btn" data-clipboard-target="#copy-input-1"
+							type="button" title="Скопировать ссылку"></button>
+					</div>
+				</div>
+				<div class="about-platform__current-link--row">
+					<h2 class="about-platform__current-link--title">
+						Актуальная ссылка:
+					</h2>
+					<div class="about-platform__current-link--copy">
+						<label class="about-platform__current-link--label">
+							<input type="text" name="copy-link-2" value="https://kraken.com" id="copy-input-2" readonly
+								class="about-platform__current-link--input">
+						</label>
+						<button class="about-platform__current-link--btn copy-btn" data-clipboard-target="#copy-input-2"
+							type="button" title="Скопировать ссылку"></button>
+					</div>
+				</div>
+			</form>
+			<div class="about-platform__text text">
+				<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+				<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+			</div>
+		</div>
+	</section>
+</main>
+
+@@include("html/_footer.html")
