@@ -30,10 +30,6 @@ progress,sub,sup {
     left: 0
 }
 
-.about-platform__current-link--row,.about-platform__logo,.btn,.header__nav--item,.login__body,.platforms__body,.platforms__item,.txt-center {
-    text-align: center
-}
-
 .center,.index__advantages-card--body,.popup-wrapper,.wrapper,body,html {
     min-height: 100%
 }
@@ -146,11 +142,6 @@ sub {
 
 sup {
     top: -.5em
-}
-
-.copy-btn,.popup,.popup-bg {
-    top: 0;
-    height: 100%
 }
 
 img {
@@ -290,6 +281,7 @@ body {
 
 .btn {
     display: inline-block;
+    text-align: center;
     padding: 15px 44px;
     font-weight: 500;
     font-size: 1.125rem;
@@ -353,15 +345,23 @@ body {
     color: #000
 }
 
+.input,.title {
+    font-size: 1.125rem
+}
+
 .input {
     padding: 16px 30px;
-    font-size: 1.125rem;
     line-height: 133%;
     border: 1px solid #d9d9d9;
     border-radius: 10px;
     height: 68px;
     color: #c4c4c4;
-    transition: color .2s ease-in-out
+    transition: color .2s ease-in-out,border-color .2s ease-in-out
+}
+
+.copy-btn,.popup,.popup-bg {
+    top: 0;
+    height: 100%
 }
 
 .input::-webkit-input-placeholder {
@@ -472,8 +472,7 @@ body {
 
 .title {
     font-family: var(--title-font);
-    font-weight: 600;
-    font-size: 1.125rem
+    font-weight: 600
 }
 
 .min-title {
@@ -484,6 +483,10 @@ body {
 .section-title {
     font-family: var(--title-font);
     font-weight: 700
+}
+
+.txt-center {
+    text-align: center
 }
 
 .text {
@@ -569,7 +572,7 @@ body {
     background: #fff
 }
 
-.header,.header__logo--img,.header__nav,.header__nav--item,.header__nav--link,.popup-close-btn svg {
+.popup-close-btn svg {
     width: 100%
 }
 
@@ -593,6 +596,7 @@ body {
     position: static;
     left: 0;
     top: 0;
+    width: 100%;
     z-index: 99
 }
 
@@ -610,6 +614,10 @@ body {
     max-width: 150px
 }
 
+.header__logo--img {
+    width: 100%
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -621,6 +629,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
     height: 100vh;
     background: var(--white);
     opacity: 0;
@@ -628,7 +637,7 @@ body {
     transition: opacity .2s ease-in-out,visibility .2s ease-in-out
 }
 
-.header__nav._active {
+.header__burger span:nth-child(2),.header__nav._active,.login__label._error .login__error-message {
     opacity: 1;
     visibility: visible
 }
@@ -639,6 +648,15 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%
+}
+
+.header__nav--item {
+    width: 100%;
+    text-align: center
+}
+
+.header__nav--link {
+    width: 100%
 }
 
 .header__burger {
@@ -671,9 +689,7 @@ body {
 .header__burger span:nth-child(2) {
     top: 50%;
     -webkit-transform: translate(0,-50%);
-    transform: translate(0,-50%);
-    opacity: 1;
-    visibility: visible
+    transform: translate(0,-50%)
 }
 
 .header__burger span:nth-child(3) {
@@ -884,6 +900,7 @@ body {
 }
 
 .login__body {
+    text-align: center;
     padding: 96px 30px;
     width: 100%
 }
@@ -897,8 +914,41 @@ body {
     width: 100%
 }
 
-.login__input,.login__label {
-    width: 100%
+.login__label {
+    width: 100%;
+    position: relative;
+    transition: padding-bottom .2s ease-in-out
+}
+
+.login__label._error .login__input {
+    border-color: red;
+    color: red
+}
+
+.login__label._error {
+    padding-bottom: 40px
+}
+
+.login__input {
+    width: 100%;
+    position: relative;
+    z-index: 2
+}
+
+.login__error-message {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+    text-align: center;
+    color: red;
+    padding-top: 5px;
+    font-size: 1rem;
+    line-height: 133%
 }
 
 .login__submit {
@@ -906,6 +956,7 @@ body {
 }
 
 .platforms__body {
+    text-align: center;
     padding: 50px 0
 }
 
@@ -923,7 +974,8 @@ body {
 .platforms__item {
     flex: 1 1 100%;
     padding: 52px 33px;
-    margin-top: 0
+    margin-top: 0;
+    text-align: center
 }
 
 .platforms__item:nth-child(n+2),.platforms__item:nth-child(n+3) {
@@ -958,7 +1010,8 @@ body {
 }
 
 .about-platform__logo {
-    padding-top: 15px
+    padding-top: 15px;
+    text-align: center
 }
 
 .about-platform__logo img {
@@ -977,7 +1030,8 @@ body {
     padding: 21px 0;
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    text-align: center
 }
 
 .about-platform__current-link--title {
@@ -1019,7 +1073,7 @@ body {
 }
 
 @media (min-width:500px) {
-    .text {
+    .login__error-message,.text {
         font-size: 1.175rem
     }
 
@@ -1115,6 +1169,10 @@ body {
     .index__current-link--submit {
         padding: 32px;
         font-size: 1.5rem
+    }
+
+    .login__error-message {
+        font-size: 1.25rem
     }
 
     .platforms__body {
@@ -1263,8 +1321,12 @@ body {
         font-size: 1.5625rem
     }
 
-    .about-platform__back,.index__current-link--submit {
+    .index__current-link--submit {
         font-size: 1.875rem
+    }
+
+    .login__error-message {
+        font-size: 1.5rem
     }
 
     .platforms__body {
@@ -1297,6 +1359,10 @@ body {
 
     .platforms__item--btn {
         margin-top: 55px
+    }
+
+    .about-platform__back {
+        font-size: 1.875rem
     }
 
     .about-platform__logo {

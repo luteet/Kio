@@ -168,7 +168,7 @@ body {
 
 	color: #C4C4C4;
 
-	transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out, border-color .2s ease-in-out;
 
 	&::placeholder {
 		color: #C4C4C4;

@@ -37,12 +37,57 @@
 
 	&__label {
 		width: 100%;
+		position: relative;
+		transition: padding-bottom .2s ease-in-out;
+	}
+
+	&__label._error &__input {
+		border-color: red;
+		color: red;
+	}
+
+	&__label._error {
+		padding-bottom: 40px;
+	}
+
+	&__label._error &__error-message {
+		opacity: 1; visibility: visible;
 	}
 
 	// .login__input
 
 	&__input {
 		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__error-message {
+		position: absolute;
+		left: 0; bottom: 0;
+		width: 100%;
+
+		display: block;
+		opacity: 0; visibility: hidden;
+		transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+		text-align: center;
+
+		color: red;
+		padding-top: 5px;
+
+		font-size: 1rem;
+	    @media (min-width: 500px) {
+	        font-size: 1.175rem;
+	    }
+	    line-height: 133%;
+
+	    @include _768 {
+	        font-size: 1.25rem;
+	    }
+
+		@include _992 {
+			font-size: 1.5rem;
+		}
 	}
 
 	// .login__submit
